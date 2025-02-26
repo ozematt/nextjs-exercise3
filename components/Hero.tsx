@@ -1,10 +1,12 @@
 import { Fugaz_One } from "next/font/google";
+import Button from "./Button";
+// import Calendar from "./Calendar";
 
 const fugaz = Fugaz_One({ subsets: ["latin"], weight: ["400"] });
 
 const Hero = () => {
   return (
-    <div className="py-10 sm:py-14 md:py-20">
+    <div className="py-4 md:py-10 flex flex-col gap-8 sm:gap-10">
       <h1
         className={
           "text-5xl sm:text-6xl md:text-7xl text-center " + fugaz.className
@@ -17,6 +19,11 @@ const Hero = () => {
         Create your mood record and see how you feel on{" "}
         <span className="font-semibold">every day of every year.</span>
       </p>
+      <div className="grid grid-cols-2 gap-4 w-fit mx-auto">
+        <Button text="Sign Up" />
+        <Button text="Login" dark />
+      </div>
+      {/* <Calendar demo /> */}
     </div>
   );
 };
