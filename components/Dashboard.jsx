@@ -60,7 +60,6 @@ export default function Dashboard() {
       // update firebase
       const docRef = doc(db, "users", currentUser.uid);
       const res = await setDoc(
-        // <-----firebase update
         docRef,
         {
           [year]: {
@@ -69,7 +68,7 @@ export default function Dashboard() {
             },
           },
         },
-        { merge: true } // <--- no overwrite data, add new instead
+        { merge: true }
       );
     } catch (err) {
       console.log("Failed to set data: ", err.message);
