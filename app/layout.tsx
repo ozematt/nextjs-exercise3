@@ -5,7 +5,7 @@ import { AuthProvider } from "@/context/AuthContext";
 import Head from "./head";
 import Logout from "@/components/Logout";
 
-const opensans = Open_Sans({ subsets: ["latin"] });
+const openSans = Open_Sans({ subsets: ["latin"] });
 const fugaz = Fugaz_One({ subsets: ["latin"], weight: ["400"] });
 
 export const metadata = {
@@ -51,7 +51,7 @@ export default function RootLayout({
         <body
           className={
             "w-full max-w-[1000px] mx-auto text-sm sm:text-base min-h-screen flex flex-col text-slate-800  " +
-            opensans.className
+            openSans.className
           }
         >
           {header}
