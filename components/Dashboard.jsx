@@ -58,7 +58,7 @@ export default function Dashboard() {
       // update the global state
       setUserDataObj(newData);
       // update firebase
-      const docRef = doc(db, "users", currentUser.uid);
+      const docRef = doc(db, "users", currentUser.uid); // <-----firebase update
       const res = await setDoc(
         docRef,
         {

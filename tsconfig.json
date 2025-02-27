@@ -26,7 +26,9 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "context/AuthContext.js"
+    "context/AuthContext.js",
+    "components/Calendar.jsx",
+    "components/Dashboard.jsx"
   ],
   "exclude": ["node_modules"]
 }

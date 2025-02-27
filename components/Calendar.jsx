@@ -31,7 +31,7 @@ const dayList = [
 
 const fugaz = Fugaz_One({ subsets: ["latin"], weight: ["400"] });
 
-export default function Calendar(props: any) {
+export default function Calendar(props) {
   const { demo, completeData, handleSetMood } = props;
   const now = new Date();
   const currMonth = now.getMonth();
@@ -43,7 +43,7 @@ export default function Calendar(props: any) {
   const numericMonth = monthsArr.indexOf(selectedMonth);
   const data = completeData?.[selectedYear]?.[numericMonth] || {};
 
-  function handleIncrementMonth(val: any) {
+  function handleIncrementMonth(val) {
     // value +1 -1
     // if we hit the bounds of the months, then we can just adjust the year that is displayed instead
     if (numericMonth + val < 0) {
