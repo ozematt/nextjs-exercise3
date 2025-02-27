@@ -28,7 +28,8 @@
     ".next/types/**/*.ts",
     "context/AuthContext.js",
     "components/Calendar.jsx",
-    "components/Dashboard.jsx"
+    "components/Dashboard.jsx",
+    "components/Login.jsx"
   ],
   "exclude": ["node_modules"]
 }
