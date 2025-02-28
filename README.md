@@ -22,3 +22,13 @@ appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
 const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
 export const db = getFirestore(app);
+
+⚠ Dodaj klucze Firebase do .env.local:
+NEXT_PUBLIC_FIREBASE_API_KEY="your-api-key"
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN="your-auth-domain"
+NEXT_PUBLIC_FIREBASE_PROJECT_ID="your-project-id"
+NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET="your-storage-bucket"
+NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID="your-messaging-sender-id"
+NEXT_PUBLIC_FIREBASE_APP_ID="your-app-id"
+
+Ważne: Używamy NEXT*PUBLIC*, bo te zmienne muszą być dostępne w kliencie (np. w komponentach React).
