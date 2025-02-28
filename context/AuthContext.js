@@ -37,7 +37,7 @@ export function AuthProvider({ children }) {
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, async (user) => {
-      // <------- listening if authentication stat if changing, from firebase
+      // <------- listening if authentication state is changing, from firebase
       try {
         // Set the user to our local context state
         setLoading(true);
