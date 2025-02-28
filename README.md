@@ -1,4 +1,5 @@
 1. Instalacja Firebase SDK:
+
    Najpierw zainstaluj Firebase SDK do obsługi autoryzacji i bazy danych w kliencie: npm install firebase
 
 2. Konfiguracja Firebase w Next.js:
